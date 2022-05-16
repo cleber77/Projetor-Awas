@@ -2,22 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   }
-   header{
-       height: 100px;
-       background-color: black;
-       color: aliceblue;
-   }
-   body{
-     font-family:'Montserrat';
-     font-size: 13px;
 }
+body{
+  font-family:'Montserrat',Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  overflow-x:hidden;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+    color: aliceblue;
+}
+
    .header {
-       max-width: 1140px; 
-       height: 100px;
+       max-width:1140px; 
+       height:100px;
        margin:auto;
        display:flex ;
-       align-items: center;
+       align-items:center;
    }
 
     .logo {
@@ -28,6 +31,7 @@
   width:80px; 
   height:80px;
   background-color: #b28756;
+  border-radius:50px;
  }
     .menu {
     flex: 1;
@@ -55,11 +59,23 @@
         border-bottom: 5px solid black;
     }
     .menu li a:hover,
-    .menu  .active a{
+    .menu .active a{
         border-bottom: 5px solid #b28756
     }
-    
-   
+    .button{
+        display:in block;
+        background-color :#b28756;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight:600px;
+        font-size:9px;
+        text-decoration:none;
+        padding:10px 30px;
+        margin-top:30px;
+        border-radius:20px;
+    }
+
+
 .banner{
         height: calc(100vh - 100px);
         background-color:rgb(121, 130, 138);
@@ -67,7 +83,6 @@
         background-size:cover;
         background-position: bottom;
         overflow:hidden;
-
 }
 
 .banner .sliders{
@@ -80,3 +95,109 @@
      display:inline-block;
      background-color:rgba(0, 0, 0, 0.8);
  }
+ .banner .slidearea {
+     display: flex;
+     height:100%;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     flex-direction: column;
+ }
+ .banner h1 {
+     text-transform:uppercase;
+     font-weight:bold;
+     font-size:40px;    
+ }
+ .banner h1 span {
+    color:#b28756;
+ }
+ .banner  h2 {
+     text-transform: uppercase;
+     margin-top: 20px;
+ }
+ 
+ .banner .sliders-pointers {
+      width:100vw ;
+      height:20pX;
+      position:absolute;
+      margin-top:-50px;
+      display:flex ;
+      justify-content:center;
+      align-items:center;
+ }
+ .banner .pointer {
+       width:15px;
+       height:15px;
+       border:2px solid #b28756;
+       border-radius:8px;
+       margin-left:5px;
+       margin-right:5px;
+       cursor:pointer;
+ }
+ .banner .pointer.active{
+     background-color: #b28756;
+ }
+
+ .default {
+     background-color:rgb(239, 245, 234); 
+     padding-top:50px;
+     padding-bottom:50px;
+ }
+ 
+ .default .section-title,
+ .default .section-desc{
+     text-align:center;
+     text-transform:uppercase;
+     font-weight: 600;
+ }
+ .default .section-title{
+   font-size:20px; 
+ }
+ .default .section-desc{
+     font-size:12px;
+     color: rgb(175, 180, 180);
+     margin-top:9px;
+     margin-bottom: 40px;
+ }
+  .default .section-body{
+      max-width:1140px;
+      margin:auto;
+    
+    }
+    .default .light{
+        background-color: #eedede;
+    }
+    .default.light .section-title {    
+        color:rgb(10, 1, 1)
+    }
+    .default.dark{
+        background-color: rgb(10, 2, 2);
+    }
+    .default.dark .section-title{
+        color: rgb(241, 237, 237);
+    }
+   
+
+/*
+CSS DE  AREAS ESPECIFICAS
+*/
+
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus--left{
+    flex: 1;
+}
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height:20px;
+
+}
+.section-aboutus--right{
+    width:520px;
+    text-align:center;
+}
+.section-aboutus--right img {
+    width:480px;
+    box-shadow:0px 10px 10px #333;
+}
