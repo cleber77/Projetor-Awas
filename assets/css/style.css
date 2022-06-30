@@ -159,37 +159,39 @@ header{
      margin-top:9px;
      margin-bottom: 40px;
  }
-  .default .section-body{
+  .default .section-body  {
       max-width:1140px;
       margin:auto;
+      color :rgb(10, 8, 8)
     
     }
     .default .light{
-        background-color: #eedede;
+        background-color: #fff;
     }
     .default.light .section-title {    
         color:rgb(10, 1, 1)
     }
-    .default.dark{
+    .default.dark {
         background-color: rgb(10, 2, 2);
     }
-    .default.dark .section-title{
-        color: rgb(241, 237, 237);
+    .default.dark .section-body {
+        color:#fff;
     }
-   
+  
+    
 
 /*
 CSS DE  AREAS ESPECIFICAS
 */
 
-.section-aboutus{
-    display: flex;
+.section-aboutus {
+    display:flex;
 }
 .section-aboutus--left{
-    flex: 1;
+    flex:1;
 }
-.section-aboutus--left p{
-    font-size: 14px;
+.section-aboutus--left p {
+    font-size:14px;
     line-height:20px;
 
 }
@@ -199,5 +201,30 @@ CSS DE  AREAS ESPECIFICAS
 }
 .section-aboutus--right img {
     width:480px;
-    box-shadow:0px 10px 10px #333;
+    box-shadow:0px 5px 10px #333;
+}
+
+
+.section-services {
+    display:flex;
+}
+.section-service {
+    flex:1;
+    text-align: center;
+    border-right:1px solid #fff;
+    padding: 15px;
+}
+.section-service:first-child{
+    border-left:1px solid #fff;
+}
+.section-service h4 {
+margin-top: 20px;
+text-transform: uppercase;
+font-size: 18;
+}
+
+.section-service p {
+    color: #fff;
+    margin: 10px;
+    font-size: 13px;
 }
